@@ -1,11 +1,10 @@
 [tool.ruff]
+line-length = 88
+target-version = "py313"
 
 exclude = [
     "manage.py",
 ]
-
-line-length = 88
-target-version = "py313"
 
 [tool.ruff.lint]
 select = [
