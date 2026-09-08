@@ -4,6 +4,9 @@ target-version = "py313"
 
 exclude = [
     "manage.py",
+    "settings.py",
+    "__pycache__",
+    "migrations",
 ]
 
 [tool.ruff.lint]
