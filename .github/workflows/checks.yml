@@ -22,7 +22,7 @@ jobs:
         run: docker compose run --rm app sh -c "python manage.py test"
 
       - name: Lint
-        run: docker compose run --rm app ruff check .
+        run: docker compose run --rm app sh -c "ruff check .""
 
       - name: Format
-        run: docker compose run --rm app ruff format --check .
+        run: docker compose run --rm app sh -c "ruff format --check .""
